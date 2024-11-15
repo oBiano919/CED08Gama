@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpo Fechado</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" type="text/css" href="!Teatro.css" media="screen" />
+</head>
+<body>
+ 
+    <!-- Cabeçalho com logotipo e ícone do menu -->
+    <header>
+        <h1> CED 08</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="!index.html">Início</a></li>
+                <li><a href="!sobreNos.html">Sobre Nós</a></li>
+                <li><a href="!Teatro.html">Teatro "Corpo Fechado"</a></li>
+                <li><a href="!ConciênciaNegra.html">Consciência Negra</a></li>
+                <li><a href="https://www.instagram.com/ced08gama/">Instagram</a></li>
+                <li><a href="https://linktr.ee/ced08gama?fbclid=PAZXh0bgNhZW0CMTEAAaY-ps3hxEQBxYxWM96Z-MFCefbhvxPBCILXVytCb_EE5ttX6PuAIMvVspg_aem_TlQLX6Tx_wIWXVK3rwaXHA">Informações Importantes</a></li>
+            </ul>
+        </nav>
+        <script src="!!script.js"></script>
+    </header>
+
+    
+
+    <section class="theater-section">
+        <img   style="margin-top: 100px;" class="main-image" src="atores.png" alt="atores teatro">
+        
+        <h2>Teatro "Corpo Fechado": Uma Reflexão Sobre o Racismo</h2>
+        <p>No dia 1º de agosto, alunos do Centro Educacional 08 do Gama apresentaram o espetáculo teatral "Corpo Fechado", que abordou a temática do racismo de forma sensível e impactante...</p>
+        
+        <p>A apresentação contou com a participação de alunos de diferentes turmas...</p>
+    
+        <h3>Reações do Público</h3>
+        <p>O público presente ficou tocado pela apresentação...</p>
+    
+        <h3>Depoimentos</h3>
+        <blockquote>
+            <p>"Ver a peça foi uma experiência transformadora..." - <strong>Luan Belchior, aluno do 2º ano</strong></p>
+        </blockquote>
+        <blockquote>
+            <p>"gostei muito da peça,com certeza vou ver outras vezes..." - <strong>Felipe Paulo, aluno do 2º ano</strong></p>
+        </blockquote>
+    
+        <h3>Próximas Ações</h3>
+        <p>O CED 08 continuará promovendo eventos e atividades...</p>
+    
+        <video style="border:solid 1px #fff;" class="video" width="300px" controls autoplay loop>
+            
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="media-container">
+            <img style="border: 1px solid black;" class="logo" src="corpofechado.png" alt="logo teatro corpo fechado">
+        </div>
+        
+    </section>    
+    <footer>
+        <p>CED08 Gama - Educação para a Inclusão e Consciência</p>
+        <p>&copy; 2024 CED08 Gama. Todos os direitos reservados.</p>
+        <div class="desenvolver"><a href="desenvolvedores.html">Desenvolvedores</a></div>
+    </footer>
+
+    <script src="JS/script2.js"></script>
+    <button class="seta" onclick="topFunction()" id="topButton" title="Voltar ao topo">⬆️</button>
+
+<script>
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        const topButton = document.getElementById("topButton");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+}
+
+</script>
+
+<style>
+    #topButton {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+        padding: 10px;
+    }
+</style>
+
+</body >
+</html>

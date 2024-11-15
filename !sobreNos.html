@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="!sobreNos.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com logotipo e ícone do menu -->
+    <header>
+        <h1> CED 08</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="!index.html">Início</a></li>
+                <li><a href="!sobreNos.html">Sobre Nós</a></li>
+                <li><a href="!Teatro.html">Teatro "Corpo Fechado"</a></li>
+                <li><a href="!ConciênciaNegra.html">Consciência Negra</a></li>
+                <li><a href="https://www.instagram.com/ced08gama/">Instagram</a></li>
+                <li><a href="https://linktr.ee/ced08gama?fbclid=PAZXh0bgNhZW0CMTEAAaY-ps3hxEQBxYxWM96Z-MFCefbhvxPBCILXVytCb_EE5ttX6PuAIMvVspg_aem_TlQLX6Tx_wIWXVK3rwaXHA">Informações Importantes</a></li>
+            </ul>
+        </nav>
+        <script src="!!script.js"></script>
+    </header>
+
+
+    <section  style="margin-top: 100px;" id="sobre">
+        <h2>Sobre o CED08</h2>
+        <p>ㅤO Centro Educacional 08 (CED 08) do Gama é uma instituição pública de ensino reconhecida por seu compromisso em proporcionar uma educação de qualidade, inclusiva e inovadora. Situada no coração do Gama, a escola se dedica a criar um ambiente acolhedor e respeitoso, onde cada aluno tem a oportunidade de aprender e crescer como cidadão responsável.</p>
+        <BR />
+        <p>ㅤNossa missão é educar para transformar, incentivando o respeito às diferenças, a igualdade de oportunidades e a valorização da cultura brasileira. O CED 08 promove uma abordagem pedagógica que integra a formação acadêmica com valores éticos e sociais, preparando os alunos para serem agentes de mudança em suas comunidades.</p>
+        <br />
+        <p>ㅤA escola se destaca pela realização de projetos interdisciplinares e atividades culturais, como oficinas de história afro-brasileira, rodas de conversa, feiras culturais e palestras. Esses eventos são planejados para ampliar a visão dos estudantes sobre temas sociais e históricos, fortalecendo o senso crítico e o compromisso com uma sociedade mais justa.</p>
+        <br />
+        <p> ㅤCom uma equipe pedagógica treinada e dedicada, o Centro Educacional 08 do Gama tem o compromisso de construir uma educação que seja inclusiva e transformadora, capacitando seus alunos para os desafios do futuro e contribuindo para a formação de uma sociedade.</p>
+        <br />
+    </section>
+
+
+    <div style="display: flex; justify-content: center;">
+        <img style="margin-bottom:50px;"" src="diretores.png" alt="diretos do ced08">
+    </div>
+    <section class="localizacao">
+        <h2>Explore Nossa Escola</h2>
+        <div class="endereco-container">
+            <h1> St. Sul Q 4 - Gama, Brasília - DF, 72415-209</h1>
+        </div>
+    </section>
+    
+    <section class="contatos">
+        <h1>Entre em Contato Conosco</h1>
+        <ul>
+            <li>📞 Telefone: <a href="tel:+5561939018321">(61) 93901-8321</a></li>
+            <li><a href="https://www.instagram.com/ced08gama/">📸 Instagram</a></li>
+        </ul>
+    </section>
+    
+
+    <footer>
+        <div class="rodape">
+            <p>CED08 Gama - Educação para a Inclusão e Consciência</p>
+            <p>&copy; 2024 CED08 Gama. Todos os direitos reservados.</p>
+            <div class="desenvolver"><a href="desenvolvedores.html">Desenvolvedores</a></div>
+        </div>
+    </footer>
+
+
+    <button class="seta" onclick="topFunction()" id="topButton" title="Voltar ao topo">⬆️</button>
+
+    <script>
+        window.onscroll = function() { scrollFunction() };
+    
+        function scrollFunction() {
+            const topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        function topFunction() {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+}
+
+    </script>
+    
+    <style>
+        #topButton {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 18px;
+            padding: 10px;
+        }
+    </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</body>
+</html>

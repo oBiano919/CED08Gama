@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ced 08</title>
+    <link rel="stylesheet" href="!index.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com logotipo e ícone do menu -->
+    <header>
+        <h1> CED 08</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="!index.html">Início</a></li>
+                <li><a href="!sobreNos.html">Sobre Nós</a></li>
+                <li><a href="!Teatro.html">Teatro "Corpo Fechado"</a></li>
+                <li><a href="!ConciênciaNegra.html">Consciência Negra</a></li>
+                <li><a href="https://www.instagram.com/ced08gama/">Instagram</a></li>
+                <li><a href="https://linktr.ee/ced08gama?fbclid=PAZXh0bgNhZW0CMTEAAaY-ps3hxEQBxYxWM96Z-MFCefbhvxPBCILXVytCb_EE5ttX6PuAIMvVspg_aem_TlQLX6Tx_wIWXVK3rwaXHA">Informações Importantes</a></li>
+            </ul>
+        </nav>
+        <script src="!!script.js"></script>
+    </header>
+
+<section id="sobre" style="margin-bottom: 30px; margin-top: 80px; background: black;">
+    <h1 class="js1">BEM VINDO</h1>
+    <h3>O Centro Educacional 08 (CED 08) do Gama é uma escola pública que se destaca pela sua dedicação à educação de qualidade, inclusão e respeito à diversidade cultural...</h3>
+    <a class="ll" href="index.html">Um pouco Mais Sobre Nós...</a>
+
+</section>
+
+
+<section id="atividades">
+    <h3 class="js3">Nossas Atividades</h3>
+    <ul class="js4">
+        <li><a href="conciêncianegra.html">Celebração do Dia da Consciência Negra</a></li>
+        <li><a href="corpofechado.html">Teatro "Corpo Fechado"</a></li>
+    </ul>
+</section>
+
+<section id="galeria">
+    <h2 class="area-1">Fotos</h2>
+    <h4>Conheça um pouco a nossa escola</h4>
+    <div class="galeria">
+        <img src="galeria1.png" alt="foto do ced 08 de cima" />
+        <img src="galeria2.png" alt="Apresentação cultural" />
+        <img src="galeria3.jpg" alt="Apresentação cultural" />
+        <img src="galeria4.png" alt="Apresentação cultural" />
+        <img src="galeria5.png" alt="Apresentação cultural" />
+        <img src="galeria6.png" alt="Apresentação cultural" />
+    </div>
+</section>
+
+<footer>
+    <p>CED08 Gama - Educação para a Inclusão e Consciência</p>
+
+    <p>&copy; 2024 CED08 Gama. Todos os direitos reservados.</p>
+    <div class="desenvolver"><a href="desenvolvedores.html">Desenvolvedores</a></div>
+</footer>
+
+
+
+<button class="seta" onclick="topFunction()" id="topButton" title="Voltar ao topo">⬆️</button>
+
+<script>
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        const topButton = document.getElementById("topButton");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    // ScrollReveal Configuration
+    ScrollReveal().reveal('.js1', { duration: 2000 });
+    ScrollReveal().reveal('.js2', { duration: 2000 });
+    ScrollReveal().reveal('.js3', { duration: 2000 });
+    ScrollReveal().reveal('.area-1', { duration: 2000 });
+    function toggleMenu() {
+document.querySelector('.nav-links').classList.toggle('open');
+}
+
+</script>
+
+<style>
+    #topButton {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+</style>
+</body>
+</html>
